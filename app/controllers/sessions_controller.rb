@@ -13,17 +13,17 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to users_path
+     redirect_to "/users/#{user.id}"
     else
       flash[:error] = "INVALID LOGIN"
-      render :'users/new'
+      render :new
     end
   end
 
     # Deleting A Session
   def destroy
     session.delete :user_id
-    redirect_to "/sessions/new"
+    redirect_to '/sessions'
   end
 
 
