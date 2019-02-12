@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 #font awesome
 gem 'font-awesome-rails'
+#gem Devise
+gem 'devise', '~> 4.2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
