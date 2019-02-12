@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   post "/sessions", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   resources :users
+  resources :styles, only: [:index, :show]
 end
