@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   get "/sessions/new", to: "sessions#new"
   post "/sessions", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
+
+  resources :sessions
   resources :users
+
 end

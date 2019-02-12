@@ -1,1 +1,18 @@
-<h1>Show Page!</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <h1><%= @user.name%>'s Profile!</h1>
+    <%= stylesheet_link_tag "application" %>
+  </head>
+  <body>
+
+    <div class="user"><label>Bio:</label><%= @user.bio%></div>
+
+    <div class = "edit"><%= link_to 'edit', "/users/#{@user.id}/edit"%></div>
+
+<%= form_tag '/logout', method: :delete do %>
+  <%= submit_tag "Log Out!!" %>
+  <%end%>
+  </body>
+</html>
