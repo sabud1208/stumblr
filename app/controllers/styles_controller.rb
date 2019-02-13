@@ -1,7 +1,8 @@
 class StylesController < ApplicationController
+  before_action :authorized
 
   def index
-    @index = Style.all
+    @styles = Style.all
   end
 
   def show

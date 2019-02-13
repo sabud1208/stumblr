@@ -14,7 +14,9 @@ class ApplicationController < ActionController::Base
   end
 
   def index
-    current_user
-  end 
+    @current_user = current_user
+    @post = Post.new
+  end
+
 
 end
