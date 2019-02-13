@@ -13,4 +13,8 @@ class ApplicationController < ActionController::Base
     redirect_to "/sessions/new" unless logged_in?
   end
 
+  def index
+    current_user
+  end 
+
 end

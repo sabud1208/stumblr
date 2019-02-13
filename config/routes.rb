@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   resources :sessions
   resources :users
   resources :styles, only: [:index, :show]
+  resources :user_styles, only: [:index, :show]
+  get '/', to: 'application#index'
 end

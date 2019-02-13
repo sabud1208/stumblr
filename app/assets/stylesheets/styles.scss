@@ -1,3 +1,7 @@
+body {
+  padding-top: 70px;
+}
+
 img {
   width: 30%;
   float: left;
@@ -12,4 +16,10 @@ p {
   border-bottom: 3px solid #F1F1F1;
   width: 30%;
   padding-bottom: 20px;
+  padding-left: 20px;
+  letter-spacing: .05em;
 }
+ .navbar-inverse {
+   font-weight: bold;
+   letter-spacing: .1em;
+ }
