@@ -1,5 +1,5 @@
 class StylesController < ApplicationController
-  before_action :authorized
+  before_action :authorized, except: [:new, :create]
 
   def index
     @styles = Style.all

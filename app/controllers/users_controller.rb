@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
+  before_action :authorized, except: [:new, :create]
 
   def index
-
+    @posts = Post.order(created_at: :desc)
   end
 
 
@@ -11,6 +12,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @posts = @user.posts
+    
   end
 
   def create
