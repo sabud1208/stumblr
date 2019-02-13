@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+style1 = Style.create(name: "Bohemian", season: "Summer")
+style2 = Style.create(name: "Hood Goth", season: "Winter")
+style3 = Style.create(name: "Vintage", season: "Year round")
+style4 = Style.create(name: "Couture", season: "spring")
