@@ -8,9 +8,7 @@ Rails.application.routes.draw do
 
   resources :sessions
   resources :users
-<<<<<<< HEAD
-  resources :styles, only: [:index, :show]
-=======
 
->>>>>>> 28fe0e9549ef9a6a6e2997a2a1132460124d1506
+  resources :styles, only: [:index, :show]
+
 end
