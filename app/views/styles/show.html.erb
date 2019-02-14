@@ -50,7 +50,6 @@
       <ol>
         <% @user_style = UserStyle.new%>
     <% @style.user_styles.each do |item|%>
-    <%byebug%>
     <div class = "list"  <li><%=item.user.name%>:
         <%= item.comments%></li></div>
     <%end%>
