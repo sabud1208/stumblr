@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :users
 
   resources :styles, only: [:index, :show]
-  resources :user_styles, only: [:index, :show]
+  resources :user_styles 
   get '/', to: 'application#index'
   post '/new', to: 'application#index'
 
