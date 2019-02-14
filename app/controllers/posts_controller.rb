@@ -1,10 +1,9 @@
 class PostsController < ApplicationController
   before_action :authorized, except: [:new, :create]
-  def create
-    Post.create(post_params)
-    byebug
-    redirect_to "users/#{}"
-  end
+  # def create
+  #   Post.create(post_params)
+  #   redirect_to user_path
+  # end
 
   def new
     @post = Post.new

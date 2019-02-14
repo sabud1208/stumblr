@@ -2,8 +2,11 @@ class ApplicationController < ActionController::Base
   helper_method :logged_in
 
   def current_user
-    if session[:user_id]
+    if !session[:user_id]
+      redirect_to new_session_path 
+    else
       @current_user = User.find(session[:user_id])
+      :'/styles'
     end
   end
 

@@ -24,7 +24,7 @@ class SessionsController < ApplicationController
     # Deleting A Session
   def destroy
     session.delete :user_id
-    redirect_to '/application/new'
+    redirect_to '/sessions/new'
   end
 
 

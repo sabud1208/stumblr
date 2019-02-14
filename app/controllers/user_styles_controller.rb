@@ -16,7 +16,7 @@ class UserStylesController < ApplicationController
  def create
    @style = Style.find(params[:user_style][:style_id])
    @user_style = UserStyle.create(user_style_params)
-   redirect_to style_path(@style)
+    redirect_to style_path(@style)
 
  end
 

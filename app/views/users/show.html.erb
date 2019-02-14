@@ -33,7 +33,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<%= new_user_path %>"> Sign Up</a></li>
             <li><a href="<%= new_session_path %>"> Log In</a></li>
-
+            <li><a href="<%= user_path(@current_user) %>"> Profile</a></li>
          </ul>
           </div>
       </div>
@@ -73,6 +73,10 @@
         <!-- Logout A User  -->
         <%= form_tag '/logout', method: :delete do %>
           <%= submit_tag "Log Out!!" %>
+        <%end%>
+
+        <%= form_tag "/users", method: :delete do %>
+          <%= submit_tag "Delete Profile!!" %>
         <%end%>
       </div>
     </div>

@@ -1,4 +1,4 @@
-<h1>Show Page!</h1>
+<br>
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,19 +32,29 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<%= new_user_path %>"> Sign Up</a></li>
             <li><a href="<%= new_session_path %>"> Log In</a></li>
-
+            <li><a href="<%= user_path(@current_user) %>"> Profile</a></li>
           </ul>
           </div>
       </div>
     </nav>
 
-    <%= @style.name %>
+  <h2><%= @style.name %></h2>
+  <% @style.image_url %>
+      <img id="image" class= "show_image" align="middle" href="<% @style.image_url %>"><%=image_tag @style.image_url %></img>
+    <div>
+
+<br>
+
     <%= render :partial => "user_styles/new" %>
-    <ol>
+
+      <ol>
     <% @style.user_styles.each do |item|%>
-    <li><%= item.comments%></li>
+    <div class = "list"  <li><%=item.user.name%>:
+        <%= item.comments%></li></div>
     <%end%>
+
     </ol>
+    </div>
     <!-- bootstrap CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
