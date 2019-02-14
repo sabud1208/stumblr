@@ -75,7 +75,7 @@
           <%= submit_tag "Log Out!!" %>
         <%end%>
 
-        <%= form_tag "/users", method: :delete do %>
+        <%= form_for "/users/#{@user.id}", method: :delete do %>
           <%= submit_tag "Delete Profile!!" %>
         <%end%>
       </div>

@@ -37,7 +37,7 @@ def update
 end
   def destroy
     @user = User.find(params[:id]).delete
-    :'users/new'
+    redirect_to '/login'
   end
 
 
