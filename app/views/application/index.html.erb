@@ -11,53 +11,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Stumblr</h1>
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand"><i class="fas fa-socks"></i>Stumblr</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-nav-demo">
-          <ul class="nav navbar-nav">
-            <li><a href="<%= styles_path %>">Styles</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"> Sign Up</a></li>
-            <li><a href="#"> Log In</a></li>
-          </ul>
-          </div>
-      </div>
-    </nav>
-
-
-    <%= form_for Post.new do |f| %>
-      <div class="form-group">
-        <%= f.text_field :description %>
-      </div>
-      <div class="form-group">
-        <%= f.file_field :images %>
-      </div>
-      <div class="form-group">
-        <%= f.text_field :user_id, value: @current_user , class:'d-none'%>
-      </div>
-      <br>
-      <div class="text-center">
-        <%= f.submit 'Create Post', class: 'btn btn-primary' %>
-      </div>
-    <% end %>
-
-  <!-- jQuery library -->
-     <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
-     <!-- Latest compiled JavaScript -->
-     <script src=“https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js”></script>
+  
   </body>
 </html>

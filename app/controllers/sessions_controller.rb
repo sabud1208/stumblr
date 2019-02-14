@@ -13,10 +13,10 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-     redirect_to "/users/#{user.id}"
+     redirect_to '/styles'
     else
       flash[:error] = "INVALID LOGIN"
-      render :new
+      redirect_to '/sessions'
     end
   end
 
