@@ -9,14 +9,13 @@ Rails.application.routes.draw do
   resources :sessions
   resources :posts, only: [:new, :create]
   resources :users
-<<<<<<< .merge_file_DtC42d
+
   resources :styles, only: [:index, :show]
   resources :user_styles, only: [:index, :show]
   get '/', to: 'application#index'
   post '/new', to: 'application#index'
-=======
+
 
   resources :styles, only: [:index, :show]
 
->>>>>>> .merge_file_usPqxX
 end
