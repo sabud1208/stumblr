@@ -12,7 +12,7 @@ user1 = User.create(name: "Cassidy Samelian", email: "somealien@obj.momo", passw
 
 style1 = Style.create(name: "Bohemian", season:"All Year", image_url: "https://cdn.shopify.com/s/files/1/0271/4967/products/NICOLAMIDIDRESS_IVORYFLORAL_5.jpg?v=1548810418")
 style2 = Style.create(name: "Vintage", season:"All Year", image_url: "https://cdn.vox-cdn.com/thumbor/rUXOeAHEZvfZ6OVBb9X6VxHROIg=/0x0:768x960/1720x0/filters:focal(0x0:768x960):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/10091537/unique_vintage.jpg")
-# style3 = Style.create(name: "Chic", season:"All Year", image_tag: "")
-# style4 = Style.create(name: "Sexy", season:"All Year", image_tag: "")
-# style5 = Style.create(name: "Tomboy", season:"All Year", image_tag: "")
-# style6 = Style.create(name: "Preppy", season:"All Year", image_tag: "")
+style3 = Style.create(name: "Chic", season:"All Year", image_url: "https://assets.vogue.com/photos/5c64a311c4ae532d5a9d9219/master/pass/_FIO0098.jpg")
+style4 = Style.create(name: "Sexy", season:"All Year", image_url: "https://i.pinimg.com/564x/53/28/92/532892ee83571df711f259a7f96122c9.jpg?b=t")
+style5 = Style.create(name: "Tomboy", season:"All Year", image_url: "https://66.media.tumblr.com/tumblr_m54jwpwKE41qd6ii0o1_500.jpg")
+style6 = Style.create(name: "Preppy", season:"All Year", image_url: "https://chouchoudressblog.files.wordpress.com/2013/09/article3-2.jpg")
