@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user1 = User.create(name: "Lizzy Le", email: "lizzyiscool@gmail.com", password: "lizzy", bio: "I like cats.")
+user1 = User.create(name: "OBJ", email: "ilooklikeobj@obj.obj", password: "obj", bio: "I like OBJ.")
+user1 = User.create(name: "Cassidy Samelian", email: "somealien@obj.momo", password: "john", bio: "I like to dance with cats.")
+
+style1 = Style.create(name: "Bohemian", season:"All Year", image_url: "https://cdn.shopify.com/s/files/1/0271/4967/products/NICOLAMIDIDRESS_IVORYFLORAL_5.jpg?v=1548810418")
+style2 = Style.create(name: "Vintage", season:"All Year", image_url: "https://cdn.vox-cdn.com/thumbor/rUXOeAHEZvfZ6OVBb9X6VxHROIg=/0x0:768x960/1720x0/filters:focal(0x0:768x960):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/10091537/unique_vintage.jpg")
+# style3 = Style.create(name: "Chic", season:"All Year", image_tag: "")
+# style4 = Style.create(name: "Sexy", season:"All Year", image_tag: "")
+# style5 = Style.create(name: "Tomboy", season:"All Year", image_tag: "")
+# style6 = Style.create(name: "Preppy", season:"All Year", image_tag: "")

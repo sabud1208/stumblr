@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authorized
-    redirect_to "/sessions/new" unless logged_in?
+    redirect_to new_session_path unless logged_in?
   end
 
   def index

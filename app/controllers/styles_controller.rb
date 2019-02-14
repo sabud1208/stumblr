@@ -6,7 +6,10 @@ class StylesController < ApplicationController
   end
 
   def show
+    #byebug
     @style = Style.find(params[:id])
   end
+
+
 
 end
