@@ -1,17 +1,24 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h1  {
+  text-align: center;
+}
+
 
 .user {
   font-size: 26px;
-  text-align: center;
-
+  text-align: center
 }
 
-.edit {
-
+#upload{
+  padding-top: 10%;
+  width: 20%;
 }
 
-body {
-  background-color: lightblue;
+#image {
+  width: 50%;
+  margin: 1.6%;
+}
+
+.form-group {
+  width: 50%;
+  font-weight: bold;
 }

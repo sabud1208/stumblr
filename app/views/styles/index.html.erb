@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <!-- NAVBAR -->
+    <!-- Navbar  -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#" class="navbar-brand"><i class="fas fa-socks"></i>Stumblr</a>
+          <a href="/" class="navbar-brand"><i class="fas fa-socks"></i>Stumblr</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-nav-demo">
           <ul class="nav navbar-nav">
@@ -28,30 +28,20 @@
             <li><a href="#">About</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"> Sign Up</a></li>
-            <li><a href="#"> Log In</a></li>
+            <li><a href="<%= new_user_path %>"> Sign Up</a></li>
+            <li><a href="<%= new_session_path %>"> Log In</a></li>
           </ul>
           </div>
       </div>
     </nav>
 
-
-
-
     <p>Choose Your Different Looks:</p>
 
-    <%= image_tag "dummy_img.jpg", alt:"girl walking" %>
-    <%= image_tag "dum2.jpg", alt:"girl walking" %>
-    <%= image_tag "wang.jpg", alt:"girl walking" %>
-
-    <%= image_tag "dummy_img.jpg", alt:"girl walking" %>
-    <%= image_tag "dum2.jpg", alt:"girl walking" %>
-    <%= image_tag "wang.jpg", alt:"girl walking" %>
-
-    <%= image_tag "dummy_img.jpg", alt:"girl walking" %>
-    <%= image_tag "dum2.jpg", alt:"girl walking" %>
-    <%= image_tag "wang.jpg", alt:"girl walking" %>
-
+    <div class="container">
+      <% @styles.each do |style| %>
+        <a id="image" href="<%= style_path(style)%>"><%=image_tag style.image_url %></a>
+      <% end %>
+    </div>
 
     <!-- bootstrap CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

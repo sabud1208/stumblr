@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2019_02_13_151354) do
   create_table "styles", force: :cascade do |t|
     t.string "name"
     t.string "season"
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

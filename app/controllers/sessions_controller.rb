@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   # Creating a new session
   def new
     # This is the login page
+    @current_user
     render :new
   end
 
@@ -23,7 +24,7 @@ class SessionsController < ApplicationController
     # Deleting A Session
   def destroy
     session.delete :user_id
-    redirect_to '/sessions'
+    redirect_to '/application/new'
   end
 
 
