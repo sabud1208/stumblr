@@ -43,7 +43,17 @@
       <li><%= flash[:error] %></li>
     <% end %>
 
-
+    <div class="body"></div>
+    		<div class="grad"></div>
+    		<div class="header">
+    			<div>Site<span>Random</span></div>
+    		</div>
+    		<br>
+    		<div class="login">
+    				<input type="text" placeholder="username" name="user"><br>
+    				<input type="password" placeholder="password" name="password"><br>
+    				<input type="button" value="Login">
+    		</div>
     <%= form_for @user do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %>
@@ -55,6 +65,23 @@
       <%= f.text_field :bio%>
       <%= f.submit %>
     <% end %>
+
+    <%# footer %>
+
+        <div class="footer">
+          <div id="button"></div>
+        <div id="container">
+        <div id="cont">
+        <div class="footer_center">
+        	   <h3>STUMBLR</h3>
+             <%= link_to "| STUMBLR |", "/sessions" %>
+             <%= link_to "| STYLES |", "/styles" %>
+             <%= link_to "| LOG IN |", "/login" %>
+             <%= link_to "| SIGN UP |", "/users/new" %>
+        </div>
+        </div>
+        </div>
+        </div>
 
     <!-- bootstrap CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -38,6 +38,22 @@
     </nav>
 
 
+<!--  CODEPEN FORM-->
+    <form class="new_user" action="/sessions" method="post">
+      <div class="body"></div>
+          <div class="grad"></div>
+          <div class="header">
+            <div><span>STUMBLR</span></div>
+          </div>
+          <br>
+          <div class="login">
+              <input type="text" placeholder="Name" name="user[name]"><br>
+              <input type="text" placeholder="Email" name="user[emial]"><br>
+              <input type="password" placeholder="Password" name="user[password]"><br>
+              <input type="button" value="SIGN UP">
+          </div>
+    </form>
+
     <!-- Session create form -->
 
     <% if flash[:error] %>
@@ -54,6 +70,24 @@
       <%= f.text_field :password %>
       <%= f.submit %>
     <% end %>
+
+    <%# footer %>
+
+        <div class="footer">
+          <div id="button"></div>
+        <div id="container">
+        <div id="cont">
+        <div class="footer_center">
+        	   <h3>STUMBLR</h3>
+             <%= link_to "| STUMBLR |", "/sessions" %>
+             <%= link_to "| STYLES |", "/styles" %>
+             <%= link_to "| LOG IN |", "/login" %>
+             <%= link_to "| SIGN UP |", "/users/new" %>
+        </div>
+        </div>
+        </div>
+        </div>
+
 
     <!-- bootstrap CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
