@@ -2,41 +2,28 @@
 @import "posts";
 @import "users";
 @import "sessions";
+:before {
+      box-sizing: border-box;
+}
+body {
+  line-height: 1.42857143;
+  font-size: 12px;
+  letter-spacing: .1em;
 
+}
 
-// .container{
-//   max-width: 1000px;
-// }
-// .navbar{
-//   border-bottom: 1px solid rgba(0,0,0,.0975);
-// }
-// .user-section{
-//   a{
-//     padding-left: 15px;
-//   }
-//   i.fa{
-//     font-size: 22px;
-//     color: #000000d4;
-//   }
-// }
-// .search-form{
-//   input{
-//     font-size: 13px;
-//     text-align: center;
-//   }
-// }
-// .footer{
-//   font-size: 12px;
-//   padding-top: 30px;
-//   ul{
-//     padding-left: 0;
-//     > li{
-//       display: inline;
-//       padding-right: 15px;
-//       color: #003569;
-//     }
-//   }
-//   p{
-//     color: #999;
-//   }
-// }
+video {
+
+}
+
+.container three-image {
+  margin-top: 10%;
+}
+h1 {
+  margin-bottom: 10%;
+}
+h2 {
+  padding-top: 5%;
+  padding-left: 5%;
+  font-family: "Times New Roman"
+}
